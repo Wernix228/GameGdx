@@ -8,9 +8,9 @@ import com.mygdx.game.Drop;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-		config.setWindowSizeLimits(1600,960,1600,960);
+		config.setWindowSizeLimits(600,450,2560,1440);
 		config.setForegroundFPS(60);
 		config.setTitle("My GDX Game");
-		new Lwjgl3Application(new Drop(), config);
+		new Lwjgl3Application(new Animation(), config);
 	}
 }
