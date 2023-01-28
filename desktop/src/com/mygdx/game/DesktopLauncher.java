@@ -2,7 +2,7 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import com.mygdx.game.Drop;
+import com.mygdx.game.main.Study3Day;
 
 // Please note that on macOS your application needs to be started with the -XstartOnFirstThread JVM argument
 public class DesktopLauncher {
@@ -11,6 +11,6 @@ public class DesktopLauncher {
 		config.setWindowSizeLimits(600,450,2560,1440);
 		config.setForegroundFPS(60);
 		config.setTitle("My GDX Game");
-		new Lwjgl3Application(new Animation(), config);
+		new Lwjgl3Application(new Study3Day(), config);
 	}
 }

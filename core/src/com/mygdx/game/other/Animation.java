@@ -1,4 +1,4 @@
-package com.mygdx.game;
+package com.mygdx.game.other;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 public class Animation extends ApplicationAdapter {
     ShapeRenderer shapeRenderer;
 
-    float circleX = 200;
+    float circleX = 333;
     float circleY = 100;
 
     float xSpeed = 8;
