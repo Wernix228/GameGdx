@@ -53,6 +53,10 @@ public class KeyHandler {
                 boostSpeed();
             }else playerSpeed = 4;
 
+            if (Gdx.input.isTouched()){
+                playerX = Gdx.input.getX();
+                playerY = Gdx.input.getY();
+            }
         }
     }
 

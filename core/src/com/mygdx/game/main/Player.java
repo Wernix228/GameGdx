@@ -16,7 +16,7 @@ public class Player {
     }
     public void render(){
         batch.begin();
-        batch.draw(img,keyH.playerX,keyH.playerY,64,64);
+        batch.draw(img,keyH.playerX,keyH.playerY,96,96);
         batch.end();
     }
     public void dispose(){
