@@ -55,7 +55,7 @@ public class KeyHandler {
 
             if (Gdx.input.isTouched()){
                 playerX = Gdx.input.getX();
-                playerY = Gdx.input.getY();
+                playerY = (Gdx.input.getY() * -1) + Gdx.graphics.getWidth()/2;
             }
         }
     }

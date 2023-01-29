@@ -12,7 +12,8 @@ public class DesktopLauncher {
 		config.useVsync(true);
 		config.setWindowedMode(1536,864);
 		config.setWindowSizeLimits(1536,864,2560,1440);
-		config.setForegroundFPS(60);
+		config.setResizable(false);
+		config.setForegroundFPS(144);
 		config.setTitle("My GDX Game");
 		new Lwjgl3Application(new Study3Day(), config);
 	}
