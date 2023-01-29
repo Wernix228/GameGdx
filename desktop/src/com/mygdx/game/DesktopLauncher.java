@@ -8,7 +8,7 @@ import com.mygdx.game.main.Study3Day;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-		config.setWindowSizeLimits(600,450,2560,1440);
+		config.setWindowSizeLimits(1536,864,1536,864);
 		config.setForegroundFPS(60);
 		config.setTitle("My GDX Game");
 		new Lwjgl3Application(new Study3Day(), config);

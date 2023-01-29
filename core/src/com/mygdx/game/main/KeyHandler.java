@@ -9,6 +9,7 @@ public class KeyHandler {
     int playerX;
     int playerY;
     int playerSpeed;
+    boolean boost;
 
     long lastDropTime = System.nanoTime();
 
@@ -22,14 +23,41 @@ public class KeyHandler {
         if (TimeUtils.nanoTime() - lastDropTime > 1000000000) {
             if (Gdx.input.isKeyPressed(Input.Keys.W)) {
                 playerY += playerSpeed;
-            } else if (Gdx.input.isKeyPressed(Input.Keys.S)) {
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.S)) {
                 playerY -= playerSpeed;
-            } else if (Gdx.input.isKeyPressed(Input.Keys.D)) {
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.D)) {
                 playerX += playerSpeed;
-            } else if (Gdx.input.isKeyPressed(Input.Keys.A)) {
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.A)) {
                 playerX -= playerSpeed;
             }
+
+            if (Gdx.input.isKeyPressed(Input.Keys.UP)) {
+                playerY += playerSpeed;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.DOWN)) {
+                playerY -= playerSpeed;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
+                playerX += playerSpeed;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
+                playerX -= playerSpeed;
+            }
+            if (Gdx.input.isKeyPressed(Input.Keys.SHIFT_LEFT)) {
+                boost = true;
+            }else boost = false;
+            if (boost){
+                boostSpeed();
+            }else playerSpeed = 4;
+
         }
+    }
+
+    private void boostSpeed() {
+        playerSpeed = 8;
     }
 
     public int getPlayerX() {
