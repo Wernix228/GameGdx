@@ -3,6 +3,8 @@ package com.mygdx.game.main;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import jdk.nashorn.internal.codegen.MapCreator;
+
 public class Player {
 
     SpriteBatch batch;
@@ -23,5 +25,6 @@ public class Player {
         batch.dispose();
         img.dispose();
     }
+
 
 }

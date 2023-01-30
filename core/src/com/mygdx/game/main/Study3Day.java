@@ -4,6 +4,10 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.utils.XmlReader;
+
+import jdk.nashorn.internal.codegen.MapCreator;
 
 public class Study3Day extends ApplicationAdapter {
 
